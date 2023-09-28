@@ -292,6 +292,7 @@ main .subscribe button {
   font-size: 20px;
   border: 2px solid #3e4141;
   cursor: pointer;
+  color: #3e4141;
 }
 main .subscribe button:hover {
   background-color: #3e4141;

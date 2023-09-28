@@ -37,7 +37,7 @@ main {
             font-size: 20px;
             border: 2px solid $primary-color;
             cursor: pointer;
-
+            color: $primary-color;
            
         }
 
@@ -46,7 +46,6 @@ main {
             border: 2px solid gainsboro;
             color: whitesmoke;
             transition: all ease-in-out 0.3s;
-
         }
 
     }
