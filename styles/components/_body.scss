@@ -1,0 +1,60 @@
+main {
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px 0;
+
+        .latest-article-head {
+            color: $primary-color;
+
+            h2 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            hr {
+                    width: 4rem;
+                    border: 3px solid $primary-color;
+                    margin: 10px auto;
+            }
+        }
+
+        .article-list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 0 75px;
+
+            .article-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: gainsboro;
+                max-width: 400px;
+                padding: 20px 0;
+                box-shadow: 1px 3px 2px $primary-color;
+
+                img {
+                    width: 351px;
+                    height: 300px;
+                }
+
+                hr {
+                    width: 3rem;
+                    border: 3px solid $primary-color;
+                    margin: 20px auto;
+                }
+
+                p {
+                    width: 50%;
+                    text-align: center;
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+    
+}

@@ -10,6 +10,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 850px;
+    margin-bottom: 40px;
 
     nav {
         display: flex;
@@ -147,11 +148,6 @@ header {
                 .header-desc-mobile {
                     display: inline;
                 }
-            }
-    
-            hr {
-                width: 4rem;
-                border: 3px solid $primary-color;
             }
         }
     }
