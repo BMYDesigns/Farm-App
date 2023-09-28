@@ -124,6 +124,7 @@ main .article {
   flex-direction: column;
   align-items: center;
   gap: 50px 0;
+  margin: 50px 0;
 }
 main .article .latest-article-head {
   color: #3e4141;
@@ -166,6 +167,17 @@ main .article .article-list .article-container p {
   width: 50%;
   text-align: center;
   margin: 30px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  main .article {
+    gap: 30px 0;
+  }
+  main .article .article-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
