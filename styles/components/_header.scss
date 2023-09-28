@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: url('../../assets/img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 60px;
+
+        h2 {
+            font-size: 34px;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            color: $primary-color;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 0 50px;
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            .nav-list-border {
+                border: 3px solid $primary-color;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .header-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        color: $primary-color;
+
+        h1 {
+            font-size: 12rem;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 20px 0;
+            
+            .header-desc-mobile {
+                display: none;
+            }
+        }
+
+        hr {
+            width: 4rem;
+            border: 3px solid $primary-color;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    header {
+        height: 600px;
+    
+        nav {
+    
+            h2 {
+                font-size: 34px;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                color: $primary-color;
+            }
+    
+            .nav-list {
+    
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    
+        .header-main {
+    
+            h1 {
+                font-size: 8rem;
+            }
+    
+            p {
+                font-size: 24px; 
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    header {
+        height: 600px;
+    
+        nav {
+            display: none;
+        }
+    
+        .hamburger {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+
+            svg {
+                width: 30px;
+                color: $primary-color;
+            }
+        }
+    
+        .header-main {
+    
+            h1 {
+                font-size: 4rem;
+                font-weight: 500;
+            }
+    
+            p {
+                font-size: 18px;
+
+                .header-desc-mobile {
+                    display: inline;
+                }
+            }
+    
+            hr {
+                width: 4rem;
+                border: 3px solid $primary-color;
+            }
+        }
+    }
+
+}
