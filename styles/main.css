@@ -258,5 +258,132 @@ main .about .about-text p {
     line-height: 40px;
   }
 }
+main .subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  color: #3e4141;
+}
+main .subscribe .subscribe-title {
+  text-align: center;
+}
+main .subscribe .subscribe-title h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .subscribe .subscribe-title h3 {
+  font-weight: 500;
+}
+main .subscribe input {
+  width: 30%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+main .subscribe button {
+  background-color: gainsboro;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: 2px solid #3e4141;
+  cursor: pointer;
+}
+main .subscribe button:hover {
+  background-color: #3e4141;
+  border: 2px solid gainsboro;
+  color: whitesmoke;
+  transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+  main .subscribe input {
+    width: 70%;
+    font-size: 16px;
+  }
+  main .subscribe button {
+    width: 80%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+  background-color: gainsboro;
+}
+footer .icons {
+  display: flex;
+  gap: 0 30px;
+}
+footer .icons svg {
+  width: 50px;
+}
+footer .footer-list {
+  display: flex;
+  align-items: center;
+  gap: 0 50px;
+}
+footer .footer-list a {
+  text-decoration: none;
+  color: #3e4141;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 20px 50px;
+  }
+  footer .icons {
+    gap: 0 15px;
+  }
+  footer .icons svg {
+    width: 40px;
+  }
+  footer .footer-list {
+    gap: 0 20px;
+  }
+  footer .footer-list a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: gainsboro;
+  }
+  footer .icons {
+    display: flex;
+    gap: 0 30px;
+    margin-top: -40px;
+  }
+  footer .icons svg {
+    width: 40px;
+  }
+  footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 50px;
+  }
+  footer .footer-list a {
+    text-decoration: none;
+    color: #3e4141;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 3px 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
