@@ -8,6 +8,6 @@
     "create-css": "sass -w ./styles/main.scss ./styles/main.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "lawal",
   "license": "ISC"
 }
